@@ -1,4 +1,4 @@
-@import url("/Css/font.css");
+
 /* Reset */
 
 * ,
@@ -46,14 +46,12 @@ html {
 .request--header {
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
 
 .request--header__title {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -139,4 +137,20 @@ html {
 
 .btn:hover {
     color: var(--color-btn-hover);
+}
+
+/* Media Query */
+
+@media screen and (min-width:1336px) {
+    .requests--container{
+        grid-template-columns: repeat(3,1fr);
+        gap: 3.5rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .requests--container {
+        grid-template-columns: repeat(2,1fr);
+        gap: 3rem ;
+    }
 }
